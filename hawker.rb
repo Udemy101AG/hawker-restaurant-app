@@ -22,4 +22,17 @@ class Hawker
     def get_order
         return @order
     end
+
+    def welcome
+        puts "Welcome to #{@name}"
+    
+    def print_menu
+        @menu.display
+    end
 end
+
+        name = "My Hawker"
+        menu_items = {Penang Char Kueh Tiaw: 12.00)
+        hawker = hawker.new(name, menu_items)
+        hawker.welcome
+        hawker.print_menu

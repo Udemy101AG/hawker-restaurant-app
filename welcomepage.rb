@@ -52,8 +52,13 @@ describe Menu do
         menu_items = {Penang Char Kueh Tiaw: 12.00}
         hawker = hawker.new(name, menu_items)
         expect(hawker.welcome). to eq(nil)
-
-        
+    end
+    it 'should define a print_menu method' do
+        name = "My Hawker"
+        menu_items = {Penang Char Kueh Tiaw: 12.00}
+        hawker = hawker.new(name, menu_items)
+        expect(hawker.welcome). to eq(nil)
+    end
 end
 
 
