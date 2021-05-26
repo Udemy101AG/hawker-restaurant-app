@@ -46,6 +46,14 @@ describe Menu do
         order.add_item(name,quantity_add)
         expect(order.get_items().[name]).to be(quantity+quantity_add)
     end 
+
+    it 'should define a welcome method' do
+        name = "My Hawker"
+        menu_items = {Penang Char Kueh Tiaw: 12.00}
+        hawker = hawker.new(name, menu_items)
+        expect(hawker.welcome). to eq(nil)
+
+        
 end
 
 
